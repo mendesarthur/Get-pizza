@@ -1,0 +1,10 @@
+.product-card {
+    background-color: #555;
+}
+
+.Product-Card img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 6px;
+    height: 5px;
+}

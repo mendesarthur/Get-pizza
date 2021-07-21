@@ -1,4 +1,4 @@
-import { POINT_CONVERSION_COMPRESSED } from "constants";
+import './styles.css';
 
 interface Iproduct {
     Title: string ;
