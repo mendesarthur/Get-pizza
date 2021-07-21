@@ -10,8 +10,11 @@ const ProductCard = (props: Iproduct) => {
     return (
         <div>
             <img src={props.Poster} alt={props.Title} />
-             <h2>{props.Title}</h2>
-             <h3>{props.Year}</h3>
+            <div>
+                <h1>{props.Title}</h1>
+                <h2>{props.Year}</h2>
+            </div>
+             
         </div>
     )
 }
