@@ -4,17 +4,21 @@
 
 body {
     margin: 0px;
-    background-color:#222;
+    background-color:#222
 }
 
-    
-
-
-
-
-
-img{
-    width: 150px;
+.ProductCard img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 350px;
     height: 213px;
-    margin-right: 8px;
+    background-color: white;
+    margin-right: 16px;
+
+}
+.Products h1 {
+
+    background-color: white;
 }
