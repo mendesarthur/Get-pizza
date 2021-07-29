@@ -1,25 +1,31 @@
 import './styles.css';
 
-interface Iproduct {
-    Title: string ;
+interface IProduct {
+    Title: string;
     Year: string;
     imdbID: string;
     Type: string;
-    Poster:string; 
+    Poster: string;
 }
 
-const ProductCard = (props: Iproduct) => {
+const ProductCard = ({
+    Title,
+    Poster,
+    Year,
+    Type,
+    imdbID
+}: IProduct) => {
     return (
-        <div>
-            <img src={props.Poster} alt={props.Title} />
-            <div>
-                <h1>{props.Title}</h1>
-                <h2>{props.Year} [{props.imdbID}]</h2>
-                <h3>{props.Type}</h3>
+       <div className="card" style={{width: 300}}>
+            <img className="card-img-top" src={Poster} alt={Title} />
+            <div className="card-body">
+                <h1 className="card-title">{Title}</h1>
+                <h2 className="card-text">{Year} [{imdbID}]</h2>
+                <h3 className="card-text">{Type}</h3>
             </div>
-             
         </div>
-    )
+    );
+    
 }
 
 export default ProductCard;

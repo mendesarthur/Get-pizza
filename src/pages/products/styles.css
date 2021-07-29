@@ -1,0 +1,20 @@
+@charset "utf8";
+
+h1{
+    background-color: rgb(109, 107, 107);
+    justify-content: center;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    ul {
+        padding: 0;
+        list-style: none;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+}
