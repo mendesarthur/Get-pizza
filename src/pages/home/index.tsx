@@ -1,9 +1,12 @@
-import {homedir} from "os";
+import GlobalMenu from "../../components/GlobalMenu";
 
 const Home = () => {
     return(
+       <>
+        <GlobalMenu /> 
         <h1>Home</h1>
-               
+
+        </>
     );
 }
 
