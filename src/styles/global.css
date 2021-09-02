@@ -1,6 +1,6 @@
-/* * {
-    font-family: Arial, Helvetica, sans-serif;
-} */
+
+    
+
 
 body {
     margin: 0px;
@@ -13,3 +13,32 @@ body {
         margin: auto;
     }
 }
+nav {
+    font-family:Arial, Helvetica, sans-serif;
+    flex-direction:row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(36, 4, 58);
+    color:rgb(240, 248, 255);
+    padding: 8px;
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    display: flex;
+    justify-content:center;
+    padding: 16px;
+}
+nav a.brand {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+nav a:not(.brand) {
+    text-transform: uppercase;
+}
+.root nav a:hover {
+    background-color: #666;
+}
+ 

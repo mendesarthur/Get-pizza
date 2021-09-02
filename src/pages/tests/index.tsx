@@ -3,12 +3,12 @@ import { Modal, Button } from "react-bootstrap";
 import GlobalMenu from "../../components/GlobalMenu";
 
 const Tests = () => {
-    const [modalShow, setModalShow] = useState (false);
+    const [modalShow, setModalShow] = useState(false);
 
     const handleModalClose = () => setModalShow(false);
     const handleModalShow = () => setModalShow(true);
 
-    return(
+    return (
         <>
             <GlobalMenu />
             <h1>Tests</h1>
@@ -34,7 +34,7 @@ const Tests = () => {
                     </div>
                 </div>
             </div>
-            
+
             <h2>Modal React-Bootstrap
                 <Button variant="primary" onClick={handleModalShow}>
                     Launch demo modal
